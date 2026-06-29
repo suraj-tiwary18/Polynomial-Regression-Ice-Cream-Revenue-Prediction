@@ -1,25 +1,34 @@
 # 🍦 Temperature vs Ice Cream Revenue Prediction using Polynomial Regression
 
-A Machine Learning project that predicts ice cream revenue based on temperature using **Polynomial Regression**. This project demonstrates how non-linear relationships can be modeled more accurately than simple linear regression.
+A Machine Learning project that predicts **Ice Cream Revenue** based on the current **Temperature** using **Polynomial Regression**.
 
----
-
-## 📌 Project Overview
-
-As the temperature changes, ice cream sales also change. This project trains a Polynomial Regression model to estimate the expected revenue based on the given temperature.
-
-The model also warns the user if the entered temperature is outside the training range, since predictions beyond that range may not be reliable.
+The model is trained on historical temperature and revenue data and can estimate expected revenue for a user-provided temperature.
 
 ---
 
 ## 🚀 Features
 
-- Predicts ice cream revenue from temperature.
-- Uses Polynomial Regression (Degree = 2).
-- Handles user input from the terminal.
-- Warns when temperature is outside the training range.
+- Predicts Ice Cream Revenue using Polynomial Regression.
+- Uses Degree = 2 Polynomial Features.
+- Accepts user input from the terminal.
+- Warns users when the input temperature is outside the training range (5°C–55°C).
 - Saves the trained model using Pickle.
-- Visualization using Matplotlib & Seaborn.
+- Visualizes the relationship between Temperature and Revenue.
+
+---
+
+## 📂 Project Structure
+
+```
+Temp. vs Ice Cream Sales/
+│── venv/
+│── Ice Cream.csv
+│── ice_cream_model.pkl
+│── project.py
+│── requirements.txt
+│── README.md
+│── output.png
+```
 
 ---
 
@@ -35,32 +44,18 @@ The model also warns the user if the entered temperature is outside the training
 
 ---
 
-## 📂 Project Structure
-
-```
-Temp. vs Ice Cream Sales/
-│── venv/
-│── Ice Cream.csv
-│── ice_cream_model.pkl
-│── project.py
-│── requirements.txt
-│── README.md
-```
-
----
-
 ## ⚙️ Installation
 
 Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
+git clone https://github.com/suraj-tiwari18/Polynomial-Regression-Ice-Cream-Revenue-Prediction.git
 ```
 
-Move into the project folder
+Move into the project directory
 
 ```bash
-cd YOUR_REPOSITORY
+cd Polynomial-Regression-Ice-Cream-Revenue-Prediction
 ```
 
 Create a virtual environment
@@ -91,13 +86,15 @@ pip install -r requirements.txt
 python project.py
 ```
 
-Example:
+Example
 
 ```
 Enter the current Temperature in your area (eg: 35.5): 32
 
-Estimated Revenue from Ice Cream Sales: ₹735.48
+Estimated Revenue from Ice Cream Sales: ₹726.48
 ```
+
+If the entered temperature is outside **5°C to 55°C**, the model displays a warning because predictions outside the training range may not be reliable.
 
 ---
 
@@ -105,160 +102,27 @@ Estimated Revenue from Ice Cream Sales: ₹735.48
 
 - Load Dataset
 - Data Preprocessing
-- Polynomial Feature Generation
+- Generate Polynomial Features
 - Train Polynomial Regression Model
 - Predict Revenue
 - Save Model using Pickle
-- Visualize Results
+- Visualize Temperature vs Revenue
+
+---
+
+## 📈 Output
+
+Example visualization:
+
+![Output Graph](output.png)
 
 ---
 
 ## ⚠️ Note
 
-This model is trained only on the available dataset. Predictions outside the training temperature range may not be reliable because they are extrapolated beyond the observed data.
+This model is trained only on the available dataset.
 
----
-
-## 📷 Output
-
-- Scatter Plot of Temperature vs Revenue
-- Linear Regression Line
-- Polynomial Regression Curve
-- Revenue Prediction for User Input
-
----
-
-## 👨‍💻 Author
-
-**Suraj Tiwari**
-
-# 🍦 Temperature vs Ice Cream Revenue Prediction using Polynomial Regression
-
-A Machine Learning project that predicts ice cream revenue based on temperature using **Polynomial Regression**. This project demonstrates how non-linear relationships can be modeled more accurately than simple linear regression.
-
----
-
-## 📌 Project Overview
-
-As the temperature changes, ice cream sales also change. This project trains a Polynomial Regression model to estimate the expected revenue based on the given temperature.
-
-The model also warns the user if the entered temperature is outside the training range, since predictions beyond that range may not be reliable.
-
----
-
-## 🚀 Features
-
-- Predicts ice cream revenue from temperature.
-- Uses Polynomial Regression (Degree = 2).
-- Handles user input from the terminal.
-- Warns when temperature is outside the training range.
-- Saves the trained model using Pickle.
-- Visualization using Matplotlib & Seaborn.
-
----
-
-## 🛠️ Technologies Used
-
-- Python
-- NumPy
-- Pandas
-- Scikit-learn
-- Matplotlib
-- Seaborn
-- Pickle
-
----
-
-## 📂 Project Structure
-
-```
-Temp. vs Ice Cream Sales/
-│── venv/
-│── Ice Cream.csv
-│── ice_cream_model.pkl
-│── project.py
-│── requirements.txt
-│── README.md
-```
-
----
-
-## ⚙️ Installation
-
-Clone the repository
-
-```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
-```
-
-Move into the project folder
-
-```bash
-cd YOUR_REPOSITORY
-```
-
-Create a virtual environment
-
-```bash
-python -m venv venv
-```
-
-Activate the virtual environment
-
-### Windows
-
-```bash
-venv\Scripts\activate
-```
-
-Install the required packages
-
-```bash
-pip install -r requirements.txt
-```
-
----
-
-## ▶️ Run the Project
-
-```bash
-python project.py
-```
-
-Example:
-
-```
-Enter the current Temperature in your area (eg: 35.5): 32
-
-Estimated Revenue from Ice Cream Sales: ₹735.48
-```
-
----
-
-## 📊 Machine Learning Workflow
-
-- Load Dataset
-- Data Preprocessing
-- Polynomial Feature Generation
-- Train Polynomial Regression Model
-- Predict Revenue
-- Save Model using Pickle
-- Visualize Results
-
----
-
-## ⚠️ Note
-
-This model is trained only on the available dataset. Predictions outside the training temperature range may not be reliable because they are extrapolated beyond the observed data.
-
----
-
-## 📷 Output
-
-- Scatter Plot of Temperature vs Revenue
-- Linear Regression Line
-- Polynomial Regression Curve
-- Revenue Prediction for User Input
+Predictions for temperatures below **5°C** or above **55°C** are extrapolated and may not accurately represent real-world ice cream sales.
 
 ---
 
