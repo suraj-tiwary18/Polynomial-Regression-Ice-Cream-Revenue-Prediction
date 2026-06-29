@@ -68,4 +68,6 @@ sns.lineplot(data=df, x='Temperature', y='Revenue')
 plt.title("Temperature vs Ice Cream Revenue")
 plt.xlabel("Temperature (°C)")
 plt.ylabel("Revenue (Rs)")
+
+plt.savefig("temperature_vs_ice_cream_revenue.jpg")
 plt.show()

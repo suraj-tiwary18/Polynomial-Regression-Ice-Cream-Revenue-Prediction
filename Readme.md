@@ -27,7 +27,7 @@ Temp. vs Ice Cream Sales/
 │── project.py
 │── requirements.txt
 │── README.md
-│── output.png
+│── temperature_vs_ice_cream_revenue.png
 ```
 
 ---
@@ -114,7 +114,7 @@ If the entered temperature is outside **5°C to 55°C**, the model displays a wa
 
 Example visualization:
 
-![Output Graph](output.png)
+![Output Graph](temperature_vs_ice_cream_revenue.png)
 
 ---
 
