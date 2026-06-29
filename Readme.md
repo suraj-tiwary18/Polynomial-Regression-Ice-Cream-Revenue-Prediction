@@ -114,7 +114,7 @@ If the entered temperature is outside **5°C to 55°C**, the model displays a wa
 
 Example visualization:
 
-![Output Graph](temperature_vs_ice_cream_revenue.png)
+![Output Graph](temperature_vs_ice_cream_revenue.jpg)
 
 ---
 
